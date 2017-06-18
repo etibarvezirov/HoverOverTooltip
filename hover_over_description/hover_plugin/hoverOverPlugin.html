@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="hover.js"></script>
+
+	<style type="text/css">
+		
+		div {
+
+			background: #fff;
+			border-radius: 4px;
+			font-weight: bold;
+			color: white;
+			background-color: green;
+			border: 1px solid green;
+			position: absolute;
+			padding : 5px;
+			font-size: 14px;
+			display: none;
+		}
+
+		img {
+
+			width: 300px;
+			height: 300px;
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+
+<p><a href="#" class="hover" hover_text = "click to search on Google">Google</a></p>
+<p class="hover" hover_text = "read paragraph">This is simple paragraph</p>
+<p><img class="hover" hover_text = "Marge Simpson" src="MargeSimpson.jpg"></p>
+<br/>
+<div id="txt">wedwed</div>
+
+</body>
+
+<script type="text/javascript">
+	
+
+	$(document).ready(function(){
+
+        
+         $('.hover').hover();
+
+	});
+</script>
+
+</html>
